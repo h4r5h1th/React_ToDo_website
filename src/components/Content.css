@@ -1,0 +1,158 @@
+.Contents{
+    flex: 1;
+    text-align: center;
+    transition: background-color 1.5s ease;
+}
+
+#dark .Contents{
+    color: #BACDDB;
+    background-color: #000000;
+}
+
+#light .Contents{
+    color: black;
+    background-color: #F6F1F1;
+}
+
+.SearchBar{
+    width: 40%;
+    border-right: none;
+    margin-top: 2vh;
+    padding: 2vh;
+    transition: background-color 1.5s ease;
+}
+
+#light .SearchBar{
+    color: black;
+    border: 3px solid #0E8388;
+    border-right: none;
+    background-color: #FDF4F5;
+}
+
+#dark .SearchBar{
+    color: #FEFAE0;
+    border: 3px solid #2E4F4F;
+    border-right: none;
+    background-color: #2b2a2a;
+}
+
+.task-button{
+    padding: 2vh;
+    color: #FEFAE0;
+    transition: background-color 1.5s ease;
+}
+
+#light .task-button{
+    border: 3px solid #0E8388;
+    background-color: #0E8388;
+}
+
+#dark .task-button{
+    border: 3px solid #2E4F4F;
+    background-color: #2E4F4F;
+}
+
+#light .task-button:hover{
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px);
+}
+
+#dark .task-button:hover{
+    box-shadow: 0px 5px 0px rgba(11, 82, 72, 0.744);
+    transform: translateY(-1px);
+}
+
+#light .task-button:active{
+    background-color: #2E4F4F;
+}
+
+#dark .task-button:active{
+    background-color: #233a3a;
+}
+
+.AllTasksContent{
+    margin-top: 15px;
+}
+
+.TasksContent{
+    box-sizing: border-box;
+    display: inline-block;
+    margin: auto;
+    margin-top: 25px;
+    width: 40%;
+    padding: 15px;
+    justify-content: center;
+    transition: background-color 1.5s ease;
+}
+
+#light .TasksContent{
+    color: #FEFAE0;
+    background-color:#0E8388;
+}
+
+#dark .TasksContent{
+    color: #FEFAE0;
+    background-color:#2E4F4F;
+}
+
+.Tasks{
+    font-size: 100%;
+    overflow:hidden;
+    align-items: center;
+    justify-items: center;
+}
+
+.DeleteButton{
+    box-sizing: border-box;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    margin: auto;
+    margin-left: 10px;
+    border-radius: 100%;
+    transform: translateY(-3px);
+    transition: background-color 1.5s ease;
+}
+
+#light .DeleteButton{
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.744);
+    background-color: #058080;
+    color: rgb(207, 0, 0);
+}
+
+#dark .DeleteButton{
+    box-shadow: 0px 5px 0px rgba(11, 82, 72, 0.744);
+    background-color: #2E4F4F;
+    color: rgb(139, 0, 0);
+}
+
+.DeleteButton:hover{
+    transform: translateY(1px);
+}
+
+@media screen and (max-width: 600px){
+    #light .SearchBar{
+        border: 3px solid #075457;
+    }
+
+    #dark .SearchBar{
+        border: 3px solid #2E4F4F;
+    }
+    
+    .TasksContent{
+        width: 78%;
+    }
+    .SearchBar{
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px){
+    .TasksContent{
+        width: 60%;
+    }
+    .SearchBar{
+        width: 50%;
+    }
+}
